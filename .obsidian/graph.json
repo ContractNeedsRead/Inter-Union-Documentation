@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "NALC",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "NPMHU",
+      "color": {
+        "a": 1,
+        "rgb": 8303125
+      }
+    },
+    {
+      "query": "NRLCA",
+      "color": {
+        "a": 1,
+        "rgb": 11405834
+      }
+    },
+    {
+      "query": "Maintenance",
+      "color": {
+        "a": 1,
+        "rgb": 860863
+      }
+    },
+    {
+      "query": "APWU",
+      "color": {
+        "a": 1,
+        "rgb": 884922
+      }
+    },
+    {
+      "query": "Labor-Lookup",
+      "color": {
+        "a": 1,
+        "rgb": 10999276
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 1.4,
+  "nodeSizeMultiplier": 2.39941463414634,
+  "lineSizeMultiplier": 0.441326829268293,
+  "collapse-forces": false,
+  "centerStrength": 0.450536585365854,
+  "repelStrength": 20,
+  "linkStrength": 1,
+  "linkDistance": 105,
+  "scale": 0.08317427835927532,
+  "close": false
+}

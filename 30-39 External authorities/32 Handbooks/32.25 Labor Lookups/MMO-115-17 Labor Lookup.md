@@ -1,0 +1,53 @@
+---
+jd: ""
+type: handbook
+handbook_id: "MMO-115-17"
+handbook_section: ""
+title: MMO-115-17 Labor Lookup
+effective: ""
+status: complete
+source_file: "../_sources/LaborChecklistProd/Mapping CSVs/backup_csv/MMO-115-17-Labor-Lookup.csv"
+source_url: ""
+source_pages: ""
+source_locator: "Mapping CSVs/backup_csv/MMO-115-17-Labor-Lookup.csv"
+source_checked: 2026-10-27
+transcribed: 2026-10-27
+transcription_notes: "Generated from the archived labor-lookup CSV (verbatim figures; columns vary by MMO)."
+topics: [topic/job-security/subcontracting]
+references:
+  - target: "[[32.17 MMO Rubric Library — Index]]"
+    type: implements
+---
+
+# MMO-115-17 Labor Lookup
+
+<!-- source: born-digital CSV; see source_file -->
+
+## Full text
+
+### Labor lookup data
+
+| Machine Type | Operation (days/wk) | Tours/Day | Routine Servicing (hrs/yr) | Repair (hrs/yr) | Routine Servicing + Repair Time (hrs/yr) | Nonproductive Time (hrs/yr) | Total Servicing (hrs/yr) | Operational Maintenance (hrs/yr) | Total (hrs/yr) |
+|---|---|---|---|---|---|---|---|---|---|
+| SPSS_AA | 5 | 1 | 859.28 | 257.784 | 1117.064 | 111.7064 | 1228.7704 | 155.9996 | 1384.77 |
+| SPSS_AA | 6 | 1 | 955.48 | 286.644 | 1242.124 | 124.2124 | 1366.3364 | 187.1936 | 1553.53 |
+| SPSS_AA | 7 | 1 | 1051.68 | 315.504 | 1367.184 | 136.7184 | 1503.9024 | 218.3976 | 1722.3 |
+| SPSS_AA | 5 | 2 | 859.28 | 257.784 | 1117.064 | 111.7064 | 1228.7704 | 311.9996 | 1540.77 |
+| SPSS_AA | 6 | 2 | 955.48 | 286.644 | 1242.124 | 124.2124 | 1366.3364 | 374.3936 | 1740.73 |
+| SPSS_AA | 7 | 2 | 1051.68 | 315.504 | 1367.184 | 136.7184 | 1503.9024 | 436.7976 | 1940.7 |
+| SPSS_AA | 5 | 3 | 859.28 | 257.784 | 1117.064 | 111.7064 | 1228.7704 | 467.9996 | 1696.77 |
+| SPSS_AA | 6 | 3 | 955.48 | 286.644 | 1242.124 | 124.2124 | 1366.3364 | 561.5936 | 1927.93 |
+| SPSS_AA | 7 | 3 | 1051.68 | 315.504 | 1367.184 | 136.7184 | 1503.9024 | 655.1976 | 2159.1 |
+| SPSS_BA | 5 | 1 | 851.86 | 255.558 | 1107.418 | 110.7418 | 1218.1598 | 156.0002 | 1374.16 |
+| SPSS_BA | 6 | 1 | 948.06 | 284.418 | 1232.478 | 123.2478 | 1355.7258 | 187.2042 | 1542.93 |
+| SPSS_BA | 7 | 1 | 1044.26 | 313.278 | 1357.538 | 135.7538 | 1493.2918 | 218.3982 | 1711.69 |
+| SPSS_BA | 5 | 2 | 851.86 | 255.558 | 1107.418 | 110.7418 | 1218.1598 | 1530.16 | 2748.3198 |
+| SPSS_BA | 6 | 2 | 948.06 | 284.418 | 1232.478 | 123.2478 | 1355.7258 | 374.4042 | 1730.13 |
+| SPSS_BA | 7 | 2 | 1044.26 | 313.278 | 1357.538 | 135.7538 | 1493.2918 | 436.7982 | 1930.09 |
+| SPSS_BA | 5 | 3 | 851.86 | 255.558 | 1107.418 | 110.7418 | 1218.1598 | 468.0002 | 1686.16 |
+| SPSS_BA | 6 | 3 | 948.06 | 284.418 | 1232.478 | 123.2478 | 1355.7258 | 561.6042 | 1917.33 |
+| SPSS_BA | 7 | 3 | 1044.26 | 313.278 | 1357.538 | 135.7538 | 1493.2918 | 655.1982 | 2148.49 |
+
+## Related
+
+- [[Sources/LaborChecklistProd/Mapping CSVs/backup_csv/MMO-115-17-Labor-Lookup.csv|MMO-115-17-Labor-Lookup.csv]] — raw CSV (in-vault)

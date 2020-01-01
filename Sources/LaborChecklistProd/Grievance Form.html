@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APWU Step 1 Grievance Form</title>
+    <style>
+        /* grievance-form.css */
+        /* Styles for the APWU Grievance Form */
+
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 20px;
+            font-size: 11pt;
+            line-height: 1.2;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .header-left {
+            flex: 1;
+        }
+
+        .header-center {
+            flex: 2;
+            text-align: center;
+        }
+
+        .header-right {
+            flex: 1;
+            text-align: right;
+        }
+
+        .header-center h1 {
+            font-size: 18px;
+            margin: 0;
+            color: #0056a3;
+            font-weight: normal;
+        }
+
+        .header-right p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .header-right p.subtitle {
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .apwu-logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .form-table {
+            width: 100%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        .form-table td {
+            border: 1px solid black;
+            padding: 4px;
+            vertical-align: top;
+        }
+
+        .form-table .header-cell {
+            font-size: 6pt;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .form-table .data-cell {
+            font-size: 10pt;
+            text-align: center;
+            height: 30px;
+        }
+
+        /* Remove bottom border from all header cells */
+        .form-table .header-cell {
+            border-bottom: none;
+        }
+
+        /* Remove vertical borders for ALL cells in first row (header and data) */
+        .form-table tr:first-child td,
+        .form-table tr:nth-child(2) td {
+            border-left: none;
+            border-right: none;
+        }
+
+        /* Restore left border for first cell in both rows */
+        .form-table tr:first-child td:first-child,
+        .form-table tr:nth-child(2) td:first-child {
+            border-left: 1px solid black !important;
+        }
+
+        /* Restore right border for last cell in both rows */
+        .form-table tr:first-child td:last-child,
+        .form-table tr:nth-child(2) td:last-child {
+            border-right: 1px solid black !important;
+        }
+
+        /* Remove top border from all data cells */
+        .form-table .data-cell {
+            border-top: none;
+        }
+
+        .section-header {
+            font-size: 12pt;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section-content {
+            min-height: 60px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Make form cells editable */
+        .form-table .editable {
+            background-color: white;
+            cursor: text;
+        }
+
+        .form-table .editable:hover {
+            background-color: #f0f8ff;
+        }
+
+        .form-table .editable:focus {
+            background-color: #e6f3ff;
+            outline: 2px solid #0056a3;
+        }
+
+        /* Make all data cells editable by default */
+        .form-table .data-cell {
+            cursor: text;
+        }
+
+        .form-table .data-cell:hover {
+            background-color: #f0f8ff;
+        }
+
+        .form-table .data-cell:focus {
+            background-color: #e6f3ff;
+            outline: 2px solid #0056a3;
+        }
+
+        /* Make text areas look like form sections */
+        .editable-section {
+            width: 100%;
+            min-height: 100px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-family: 'Calibri Light', Calibri, sans-serif;
+            font-size: 12pt;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        .editable-section:focus {
+            outline: 2px solid #0056a3;
+            background-color: #f0f8ff;
+        }
+
+        /* Button styling */
+        .button-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .action-button {
+            background-color: #0056a3;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-family: Calibri, sans-serif;
+        }
+
+        .action-button:hover {
+            background-color: #004080;
+        }
+
+        .action-button:active {
+            background-color: #002f5f;
+        }
+
+        /* Import button styling */
+        .import-button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 5px;
+            font-family: Calibri, sans-serif;
+        }
+
+        .import-button:hover {
+            background-color: #218838;
+        }
+
+        /* WebEOR import button styling */
+        .webeor-import-button {
+            background-color: #17a2b8;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 5px;
+            font-family: Calibri, sans-serif;
+        }
+
+        .webeor-import-button:hover {
+            background-color: #138496;
+        }
+
+        /* Make content sections editable with proper styling */
+        .editable-section-inline {
+            display: block;
+            min-height: 100px;
+            padding: 5px;
+            border: 1px solid transparent;
+            border-radius: 3px;
+            cursor: text;
+        }
+
+        .editable-section-inline:hover {
+            background-color: #f9f9f9;
+        }
+
+        .editable-section-inline:focus {
+            background-color: #f0f8ff;
+            border: 2px solid #0056a3;
+            outline: none;
+        }
+
+        /* Status message styling */
+        .status-message {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .status-success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .status-error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+        .status-info {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+
+        /* Radio container styling */
+        .radio-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        /* Hidden file input */
+        #fileInput, #webeorFileInput {
+            display: none;
+        }
+
+        /* Attached report styling */
+        .attached-report {
+            margin-top: 30px;
+            border-top: 3px solid #0056a3;
+            padding-top: 20px;
+        }
+
+        .attached-report h2 {
+            color: #0056a3;
+            margin-bottom: 20px;
+        }
+
+        /* Import status styling */
+        .import-status {
+            margin: 10px 0;
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .import-status.success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+
+        .import-status.info {
+            background-color: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+        }
+
+        /* Print styles */
+        @media print {
+            .button-container {
+                display: none;
+            }
+            
+            .action-button, .import-button, .webeor-import-button {
+                display: none;
+            }
+            
+            .status-message, .import-status {
+                display: none !important;
+            }
+            
+            #importStatus {
+                display: none !important;
+            }
+            
+            /* Preserve original table styling - override any print defaults */
+            .form-table {
+                border-collapse: collapse !important;
+                border: 1px solid black !important;
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            .form-table td {
+                border: 1px solid black !important;
+                padding: 2px !important;
+                vertical-align: top !important;
+            }
+
+            .form-table .header-cell {
+                font-size: 5pt !important;
+                text-align: center !important;
+                background-color: #f9f9f9 !important;
+                border-bottom: none !important;
+                padding: 2px !important;
+            }
+
+            .form-table .data-cell {
+                font-size: 8pt !important;
+                text-align: center !important;
+                height: 18px !important;
+                border-top: none !important;
+                padding: 2px !important;
+            }
+
+            /* Preserve the custom border removal for first/second rows */
+            .form-table tr:first-child td,
+            .form-table tr:nth-child(2) td {
+                border-left: none !important;
+                border-right: none !important;
+            }
+
+            .form-table tr:first-child td:first-child,
+            .form-table tr:nth-child(2) td:first-child {
+                border-left: 1px solid black !important;
+            }
+
+            .form-table tr:first-child td:last-child,
+            .form-table tr:nth-child(2) td:last-child {
+                border-right: 1px solid black !important;
+            }
+            
+            /* Adjust overall print formatting */
+            body {
+                font-size: 9pt !important;
+                line-height: 1.1 !important;
+                margin: 0.5in !important;
+            }
+            
+            /* Page 1: 27% header + table, 73% background */
+            .header-container {
+                height: 8vh !important;
+                max-height: 8vh !important;
+                min-height: 8vh !important;
+                margin-bottom: 5px !important;
+                padding: 5px !important;
+                box-sizing: border-box !important;
+            }
+            
+            .header-left {
+                flex: 1 !important;
+            }
+            
+            .header-center {
+                flex: 2 !important;
+            }
+            
+            .header-right {
+                flex: 1 !important;
+            }
+            
+            .header-center h1 {
+                font-size: 12px !important;
+                margin: 0 !important;
+                line-height: 1 !important;
+            }
+            
+            .header-right p {
+                font-size: 10px !important;
+                margin: 0 !important;
+                line-height: 1 !important;
+            }
+            
+            .header-right p.subtitle {
+                font-size: 8px !important;
+            }
+            
+            .apwu-logo {
+                height: 30px !important;
+                width: auto !important;
+            }
+            
+            .form-table {
+                height: 19vh !important;
+                max-height: 19vh !important;
+                min-height: 19vh !important;
+                margin-bottom: 10px !important;
+            }
+            
+            /* Background section - 73% of page */
+            .section-header:first-of-type {
+                font-size: 10pt !important;
+                margin-top: 0 !important;
+                margin-bottom: 5px !important;
+                height: auto !important;
+                line-height: 1 !important;
+            }
+            
+            .section-content:first-of-type {
+                height: 70vh !important;
+                min-height: 70vh !important;
+                max-height: 70vh !important;
+                overflow: hidden !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                page-break-after: always !important;
+                box-sizing: border-box !important;
+            }
+            
+            /* Force page break before Corrective Action */
+            .section-header:nth-of-type(2) {
+                page-break-before: always !important;
+                margin-top: 0 !important;
+                font-size: 10pt !important;
+                margin-bottom: 5px !important;
+                line-height: 1 !important;
+            }
+            
+            /* Page 2: 50% Corrective Action, 50% Management Response */
+            .section-content:nth-of-type(2) {
+                height: 47vh !important;
+                min-height: 47vh !important;
+                max-height: 47vh !important;
+                overflow: hidden !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                box-sizing: border-box !important;
+            }
+            
+            .section-header:nth-of-type(3) {
+                margin-top: 10px !important;
+                font-size: 10pt !important;
+                margin-bottom: 5px !important;
+                line-height: 1 !important;
+            }
+            
+            .section-content:nth-of-type(3) {
+                height: 47vh !important;
+                min-height: 47vh !important;
+                max-height: 47vh !important;
+                overflow: hidden !important;
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+                page-break-after: always !important;
+                box-sizing: border-box !important;
+            }
+            
+            /* Ensure attached reports appear on new pages */
+            .attached-report {
+                page-break-before: always;
+            }
+            
+            .editable-section-inline {
+                font-size: 9pt !important;
+                line-height: 1.2 !important;
+                padding: 5px !important;
+                height: 100% !important;
+                box-sizing: border-box !important;
+            }
+            
+            /* Radio button container adjustment */
+            .radio-container {
+                margin-top: 2px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-left">
+            <svg class="apwu-logo" viewBox="0 0 129 33" xmlns="http://www.w3.org/2000/svg">
+                <path d="M99.517,3.821 L79.612,32.409 L72.224,32.409 L71.83,16.551 L61.094,32.409 L53.509,32.409 L53.017,15.073 C50.177,21.865 45.479,22.568 38.734,22.559 L38.734,32.409 L30.46,32.409 L30.46,0.101 C43.331,0.758 48.832,-1.992 52.702,6.652 L52.32,0.102 L60.896,0.102 L61.389,17.634 L73.11,0.102 L79.612,0.102 L79.809,18.225 L92.416,0.102 L110.541,0.102 L100.798,20.53 C98.242,25.892 105.776,27.278 108.358,21.896 L118.814,0.102 L128.073,0.102 C123.167,8.324 119.272,17.936 115.04,26.568 C111.242,34.311 93.759,35.745 91.038,27.09 C89.411,21.919 97.133,9.115 99.517,3.821 Z M38.734,7.981 L38.738,14.802 C38.738,14.802 41.61,14.813 42.871,14.581 C43.739,14.269 45.038,13.3 45.137,11.823 C45.298,10.642 45.054,9.993 44.349,8.966 C43.364,7.587 38.734,7.981 38.734,7.981 Z" fill="#0056a3"></path>
+                <path d="M29.254,0.102 L29.254,32.508 L21.141,32.508 L21.141,28.075 L12.608,28.075 L9.85,32.409 L0,32.409 L21.473,0.102 L29.254,0.102 Z M21.215,13.02 L16.844,21.18 L21.215,21.18 L21.215,13.02 Z" fill="#0056a3"></path>
+            </svg>
+        </div>
+        <div class="header-center">
+            <h1>American Postal Workers Union, AFL-CIO</h1>
+        </div>
+        <div class="header-right">
+            <p>Step 1 Grievance</p>
+            <p class="subtitle">Outline Worksheet</p>
+        </div>
+    </div>
+
+    <table class="form-table">
+        <tbody><tr>
+            <td class="header-cell">Grievant/Person or Union</td>
+            <td class="header-cell" colspan="2">Address</td>
+            <td class="header-cell" colspan="2">City</td>
+            <td class="header-cell" colspan="2">State</td>
+            <td class="header-cell" colspan="2">ZIP</td>
+            <td class="header-cell" colspan="2">Phone Number</td>
+        </tr>
+        <tr>
+            <td class="data-cell" contenteditable="true" data-field="cell_1_0"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_1_1"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_1_2"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_1_3"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_1_4"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_1_5"></td>
+        </tr>
+        <tr>
+            <td class="header-cell">EIN</td>
+            <td class="header-cell" colspan="2">Craft</td>
+            <td class="header-cell">Status</td>
+            <td class="header-cell">Level</td>
+            <td class="header-cell">Step</td>
+            <td class="header-cell">Duty Hours</td>
+            <td class="header-cell" colspan="2">Off Days</td>
+            <td class="header-cell" colspan="2">Email</td>
+        </tr>
+        <tr>
+            <td class="data-cell" contenteditable="true" data-field="cell_3_0"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_3_1"></td>
+            <td class="data-cell" contenteditable="true" data-field="cell_3_2"></td>
+            <td class="data-cell" contenteditable="true" data-field="cell_3_3"></td>
+            <td class="data-cell" contenteditable="true" data-field="cell_3_4"></td>
+            <td class="data-cell" contenteditable="true" data-field="cell_3_5"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_3_6"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_3_7"></td>
+        </tr>
+        <tr>
+            <td class="header-cell" colspan="2">Job No./Pay Location (UNIT/SEC/CR/STA/OFC)</td>
+            <td class="header-cell" colspan="3">Postal Installation Level</td>
+            <td class="header-cell" colspan="3">Work Location City and ZIP Code</td>
+            <td class="header-cell" colspan="2">Seniority</td>
+            <td class="header-cell">Pref. Eligible</td>
+        </tr>
+        <tr>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_5_0"></td>
+            <td class="data-cell" colspan="3" contenteditable="true" data-field="cell_5_1"></td>
+            <td class="data-cell" colspan="3" contenteditable="true" data-field="cell_5_2"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_5_3"></td>
+            <td class="data-cell" data-field="cell_5_4" style="padding: 0;">
+                <div class="radio-container">
+                    <label>
+                        <input type="radio" name="cell_5_4_radio" value="yes"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="cell_5_4_radio" value="no"> No
+                    </label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="header-cell" colspan="2">Discipline</td>
+            <td class="header-cell" colspan="3">Contract</td>
+            <td class="header-cell" colspan="3">Date</td>
+            <td class="header-cell" colspan="3">Local Grievance No.</td>
+        </tr>
+        <tr>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_7_0"></td>
+            <td class="data-cell" colspan="3" contenteditable="true" data-field="cell_7_1"></td>
+            <td class="data-cell" colspan="3" contenteditable="true" data-field="cell_7_2"></td>
+            <td class="data-cell" colspan="3" contenteditable="true" data-field="cell_7_3"></td>
+        </tr>
+        <tr>
+            <td class="header-cell" colspan="5">UNIT/SEC/CR/STA/OFC</td>
+            <td class="header-cell" colspan="2">Incident Date/Time</td>
+            <td class="header-cell" colspan="2">USPS REP-SUPR</td>
+            <td class="header-cell" colspan="2">Grievant and/or Steward</td>
+        </tr>
+        <tr>
+            <td class="data-cell" colspan="5" contenteditable="true" data-field="cell_9_0"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_9_1"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_9_2"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_9_3"></td>
+        </tr>
+        <tr>
+            <td class="header-cell" colspan="7">Step 1 Decision by (Name and Title)</td>
+            <td class="header-cell" colspan="2">Date/Time</td>
+            <td class="header-cell" colspan="2">Initials<br><small>Only verifies date of decision</small></td>
+        </tr>
+        <tr>
+            <td class="data-cell" colspan="7" contenteditable="true" data-field="cell_11_0"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_11_1"></td>
+            <td class="data-cell" colspan="2" contenteditable="true" data-field="cell_11_2"></td>
+        </tr>
+    </tbody></table>
+
+    <div class="button-container">
+        <button class="import-button" onclick="importStaffingReport()">Import Staffing Report</button>
+        <button class="webeor-import-button" onclick="importWebEORReport()">Import WebEOR Report</button>
+        <button class="action-button" onclick="saveForm()">Save Form</button>
+        <button class="action-button" onclick="printToPDF()">Print as PDF</button>
+        <button class="action-button" onclick="clearForm()">Clear Form</button>
+    </div>
+
+    <!-- Import status indicators -->
+    <div id="importStatus" style="text-align: center;">
+        <div id="staffingReportStatus" class="import-status" style="display: none;"></div>
+        <div id="webeorReportStatus" class="import-status" style="display: none;"></div>
+    </div>
+
+    <!-- Status message area -->
+    <div id="statusMessage" style="display: none;"></div>
+
+    <!-- Hidden file inputs -->
+    <input type="file" id="fileInput" accept=".html" />
+    <input type="file" id="webeorFileInput" accept=".html" />
+
+    <div class="section-header">Background:</div>
+    <div class="section-content">
+        <a name="Background"></a><span style="font-size: 12pt; line-height: 107%; font-family: &quot;Calibri Light&quot;, sans-serif; min-height: 100px; padding: 5px; border: 1px solid transparent; border-radius: 3px;" id="background-content" contenteditable="true" class="editable-section-inline">&nbsp;</span>
+    </div>
+
+    <div class="section-header">Corrective Action:</div>
+    <div class="section-content">
+        <a name="CorrectiveAction"></a><span style="font-size: 12pt; line-height: 107%; font-family: &quot;Calibri Light&quot;, sans-serif; min-height: 100px; padding: 5px; border: 1px solid transparent; border-radius: 3px;" id="corrective-action-content" contenteditable="true" class="editable-section-inline">&nbsp;</span>
+    </div>
+
+    <div class="section-header">Management Response:</div>
+    <div class="section-content">
+        <span style="font-size: 12pt; line-height: 107%; font-family: &quot;Calibri Light&quot;, sans-serif; min-height: 100px; padding: 5px; border: 1px solid transparent; border-radius: 3px;" id="management-response-content" contenteditable="true" class="editable-section-inline">&nbsp;</span>
+    </div>
+
+    <!-- Container for attached reports -->
+    <div id="attachedReportsContainer" style="display: none;"></div>
+
+    <script>
+        // Enhanced grievance-form.js
+        // JavaScript functionality for the APWU Grievance Form with WebEOR support
+
+        // Global variables to store imported data
+        let importedStaffingReportData = null;
+        let importedStaffingReportPath = null;
+        let importedStaffingReportContent = null;
+
+        let importedWebEORReportData = null;
+        let importedWebEORReportPath = null;
+        let importedWebEORReportContent = null;
+
+        // Function to show status messages
+        function showStatus(message, type = 'info') {
+            const statusDiv = document.getElementById('statusMessage');
+            statusDiv.className = `status-message status-${type}`;
+            statusDiv.textContent = message;
+            statusDiv.style.display = 'block';
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                statusDiv.style.display = 'none';
+            }, 5000);
+        }
+
+        // Function to update import status indicators with auto-hide
+        function updateImportStatus() {
+            const staffingStatus = document.getElementById('staffingReportStatus');
+            const webeorStatus = document.getElementById('webeorReportStatus');
+            
+            if (importedStaffingReportPath) {
+                staffingStatus.textContent = `✓ Staffing Report: ${importedStaffingReportPath}`;
+                staffingStatus.className = 'import-status success';
+                staffingStatus.style.display = 'block';
+                
+                // Auto-hide after 3 seconds
+                setTimeout(() => {
+                    staffingStatus.style.display = 'none';
+                }, 3000);
+            } else {
+                staffingStatus.style.display = 'none';
+            }
+            
+            if (importedWebEORReportPath) {
+                webeorStatus.textContent = `✓ WebEOR Report: ${importedWebEORReportPath}`;
+                webeorStatus.className = 'import-status success';
+                webeorStatus.style.display = 'block';
+                
+                // Auto-hide after 3 seconds
+                setTimeout(() => {
+                    webeorStatus.style.display = 'none';
+                }, 3000);
+            } else {
+                webeorStatus.style.display = 'none';
+            }
+        }
+
+        // Function to import machine staffing report
+        function importStaffingReport() {
+            const fileInput = document.getElementById('fileInput');
+            
+            // Set up file input change handler
+            fileInput.onchange = function(event) {
+                const file = event.target.files[0];
+                if (!file) return;
+                
+                // Validate file type
+                if (!file.name.toLowerCase().endsWith('.html')) {
+                    showStatus('Please select an HTML file.', 'error');
+                    return;
+                }
+                
+                // Check if it looks like a machine staffing report
+                if (!file.name.toLowerCase().includes('machine_staffing_report')) {
+                    showStatus('Please select a Machine Staffing Report HTML file.', 'error');
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    try {
+                        const htmlContent = e.target.result;
+                        const reportData = parseStaffingReport(htmlContent);
+                        
+                        if (reportData) {
+                            importedStaffingReportData = reportData;
+                            importedStaffingReportPath = file.name;
+                            importedStaffingReportContent = htmlContent;
+                            
+                            populateGrievanceFormFromStaffing(reportData);
+                            updateImportStatus();
+                            showStatus(`Successfully imported staffing report: ${file.name}`, 'success');
+                        } else {
+                            showStatus('Invalid or unrecognized Machine Staffing Report format.', 'error');
+                        }
+                    } catch (error) {
+                        console.error('Error parsing staffing report:', error);
+                        showStatus('Error reading the staffing report file. Please ensure it is a valid Machine Staffing Report.', 'error');
+                    }
+                };
+                
+                reader.readAsText(file);
+                
+                // Reset file input
+                fileInput.value = '';
+            };
+            
+            // Trigger file dialog
+            fileInput.click();
+        }
+
+        // Function to import WebEOR analysis report
+        function importWebEORReport() {
+            const fileInput = document.getElementById('webeorFileInput');
+            
+            // Set up file input change handler
+            fileInput.onchange = function(event) {
+                const file = event.target.files[0];
+                if (!file) return;
+                
+                // Validate file type
+                if (!file.name.toLowerCase().endsWith('.html')) {
+                    showStatus('Please select an HTML file.', 'error');
+                    return;
+                }
+                
+                // Check if it looks like a WebEOR analysis report
+                if (!file.name.toLowerCase().includes('webeor_analysis_report')) {
+                    showStatus('Please select a WebEOR Analysis Report HTML file.', 'error');
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    try {
+                        const htmlContent = e.target.result;
+                        const reportData = parseWebEORReport(htmlContent);
+                        
+                        if (reportData) {
+                            importedWebEORReportData = reportData;
+                            importedWebEORReportPath = file.name;
+                            importedWebEORReportContent = htmlContent;
+                            
+                            populateGrievanceFormFromWebEOR(reportData);
+                            updateImportStatus();
+                            showStatus(`Successfully imported WebEOR report: ${file.name}`, 'success');
+                        } else {
+                            showStatus('Invalid or unrecognized WebEOR Analysis Report format.', 'error');
+                        }
+                    } catch (error) {
+                        console.error('Error parsing WebEOR report:', error);
+                        showStatus('Error reading the WebEOR report file. Please ensure it is a valid WebEOR Analysis Report.', 'error');
+                    }
+                };
+                
+                reader.readAsText(file);
+                
+                // Reset file input
+                fileInput.value = '';
+            };
+            
+            // Trigger file dialog
+            fileInput.click();
+        }
+
+        // Function to parse machine staffing report HTML
+        function parseStaffingReport(htmlContent) {
+            try {
+                // Create a temporary DOM to parse the HTML
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(htmlContent, 'text/html');
+                
+                // Extract report date
+                const reportDateMatch = htmlContent.match(/Generated:\s*([0-9]{4}-[0-9]{2}-[0-9]{2})/);
+                const reportDate = reportDateMatch ? reportDateMatch[1] : new Date().toISOString().split('T')[0];
+                
+                // Find the summary table
+                const summaryTable = doc.querySelector('.summary-table');
+                if (!summaryTable) {
+                    throw new Error('Summary table not found');
+                }
+                
+                // Extract totals from the last row (TOTAL row)
+                const totalRow = summaryTable.querySelector('tr.total-row');
+                if (!totalRow) {
+                    throw new Error('Total row not found in summary table');
+                }
+                
+                const totalCells = totalRow.querySelectorAll('td');
+                if (totalCells.length < 13) {
+                    throw new Error('Insufficient data in total row');
+                }
+                
+                // Parse the total values (assuming structure: Machine ID, MM7(3), MPE9(3), ET10(3), Total(3))
+                const totalMM7Diff = parseFloat(totalCells[3].textContent.replace(/[+,]/g, '')) || 0;
+                const totalMPE9Diff = parseFloat(totalCells[6].textContent.replace(/[+,]/g, '')) || 0;
+                const totalET10Diff = parseFloat(totalCells[9].textContent.replace(/[+,]/g, '')) || 0;
+                const totalDiff = parseFloat(totalCells[12].textContent.replace(/[+,]/g, '')) || 0;
+                
+                // Find machines with negative discrepancies in the TOTAL column
+                const machinesWithNegativeDiscrepancies = [];
+                const machineToTotalDiff = {}; // Store the actual difference values
+                
+                // Get all data rows (skip header rows and total row)
+                const allRows = summaryTable.querySelectorAll('tr');
+                
+                allRows.forEach((row, index) => {
+                    // Skip the first two rows (headers) and the total row
+                    if (index < 2 || row.classList.contains('total-row')) return;
+                    
+                    const cells = row.querySelectorAll('td');
+                    // The summary table has: Machine ID, then 3 cells each for MM7, MPE9, ET10, and Total
+                    // So Total Diff should be at index 12 (0-based)
+                    if (cells.length >= 13) {
+                        const machineId = cells[0].textContent.trim();
+                        const totalDiffCell = cells[12]; // The Total Diff column
+                        const totalDiffText = totalDiffCell.textContent.trim();
+                        
+                        // Parse the value, handling both positive and negative formats
+                        const cleanValue = totalDiffText.replace(/[+,\s]/g, '');
+                        const totalDiffValue = parseFloat(cleanValue);
+                        
+                        // Store the actual difference value
+                        if (!isNaN(totalDiffValue)) {
+                            machineToTotalDiff[machineId] = totalDiffValue;
+                        }
+                        
+                        // Only include machines with negative total difference
+                        if (!isNaN(totalDiffValue) && totalDiffValue < 0) {
+                            // Extract MMO from the machine data table if available
+                            const escapedMachineId = machineId.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+                            
+                            // Look for the machine in the main data table to get its MMO
+                            const machineDataTable = doc.querySelector('table:not(.summary-table)');
+                            let mmo = '';
+                            
+                            if (machineDataTable) {
+                                const machineRows = machineDataTable.querySelectorAll('tr');
+                                machineRows.forEach(mRow => {
+                                    const mCells = mRow.querySelectorAll('td');
+                                    if (mCells.length > 3) {
+                                        const mAcronym = mCells[0].textContent.trim();
+                                        const mNumber = mCells[1].textContent.trim();
+                                        const fullMachineId = `${mAcronym} ${mNumber}`;
+                                        
+                                        if (fullMachineId === machineId && mCells[3]) {
+                                            mmo = mCells[3].textContent.trim();
+                                        }
+                                    }
+                                });
+                            }
+                            
+                            if (mmo) {
+                                machinesWithNegativeDiscrepancies.push(`${machineId} (${mmo})`);
+                            } else {
+                                machinesWithNegativeDiscrepancies.push(machineId);
+                            }
+                        }
+                    }
+                });
+                
+                console.log('Found machines with negative discrepancies:', machinesWithNegativeDiscrepancies);
+                console.log('Machine to Total Diff mapping:', machineToTotalDiff);
+                
+                return {
+                    reportDate: reportDate,
+                    totalDifference: totalDiff,
+                    totalMM7Difference: totalMM7Diff,
+                    totalMPE9Difference: totalMPE9Diff,
+                    totalET10Difference: totalET10Diff,
+                    machinesWithNegativeDiscrepancies: machinesWithNegativeDiscrepancies,
+                    machineToTotalDiff: machineToTotalDiff
+                };
+                
+            } catch (error) {
+                console.error('Error parsing staffing report:', error);
+                return null;
+            }
+        }
+
+        // Function to parse WebEOR analysis report HTML
+        function parseWebEORReport(htmlContent) {
+            try {
+                // Create a temporary DOM to parse the HTML
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(htmlContent, 'text/html');
+                
+                // Extract report date from HTML
+                const reportDateMatch = htmlContent.match(/Generated on\s+([0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4})/);
+                const reportDate = reportDateMatch ? reportDateMatch[1] : new Date().toLocaleDateString();
+                
+                // Find the machine performance table
+                const tables = doc.querySelectorAll('table');
+                let performanceTable = null;
+                
+                // Look for the table with machine performance data
+                tables.forEach(table => {
+                    const headers = table.querySelectorAll('th');
+                    const headerText = Array.from(headers).map(th => th.textContent.toLowerCase());
+                    if (headerText.includes('machine') && (headerText.includes('total runs') || headerText.includes('efficiency'))) {
+                        performanceTable = table;
+                    }
+                });
+                
+                if (!performanceTable) {
+                    throw new Error('Machine performance table not found');
+                }
+                
+                // Extract machine data
+                const machineData = [];
+                const dataRows = performanceTable.querySelectorAll('tr:not(:first-child)');
+                
+                dataRows.forEach(row => {
+                    const cells = row.querySelectorAll('td');
+                    if (cells.length >= 6) {
+                        const machine = cells[0].textContent.trim();
+                        const totalRuns = parseInt(cells[1].textContent.replace(/,/g, '')) || 0;
+                        const totalFed = parseInt(cells[2].textContent.replace(/,/g, '')) || 0;
+                        const avgFed = parseInt(cells[3].textContent.replace(/,/g, '')) || 0;
+                        const totalHours = parseFloat(cells[4].textContent) || 0;
+                        const avgRate = parseInt(cells[5].textContent.replace(/,/g, '')) || 0;
+                        const efficiency = cells.length > 6 ? parseFloat(cells[6].textContent) : 0;
+                        
+                        machineData.push({
+                            machine,
+                            totalRuns,
+                            totalFed,
+                            avgFed,
+                            totalHours,
+                            avgRate,
+                            efficiency
+                        });
+                    }
+                });
+                
+                // Calculate totals
+                const totalRuns = machineData.reduce((sum, m) => sum + m.totalRuns, 0);
+                const totalFedCount = machineData.reduce((sum, m) => sum + m.totalFed, 0);
+                const totalHours = machineData.reduce((sum, m) => sum + m.totalHours, 0);
+                const avgEfficiency = machineData.length > 0 ? 
+                    machineData.reduce((sum, m) => sum + m.efficiency, 0) / machineData.length : 0;
+                
+                // Find machines with low efficiency (below 50%)
+                const lowEfficiencyMachines = machineData
+                    .filter(m => m.efficiency < 50)
+                    .map(m => `${m.machine} (${m.efficiency.toFixed(1)}% efficiency)`);
+                
+                // Find machines with low utilization (below average runs)
+                const avgRunsPerMachine = totalRuns / machineData.length;
+                const lowUtilizationMachines = machineData
+                    .filter(m => m.totalRuns < avgRunsPerMachine * 0.5)
+                    .map(m => `${m.machine} (${m.totalRuns} runs vs avg ${Math.round(avgRunsPerMachine)})`);
+                
+                return {
+                    reportDate: reportDate,
+                    totalMachines: machineData.length,
+                    totalRuns: totalRuns,
+                    totalFedCount: totalFedCount,
+                    totalHours: totalHours,
+                    avgEfficiency: avgEfficiency,
+                    machineData: machineData,
+                    lowEfficiencyMachines: lowEfficiencyMachines,
+                    lowUtilizationMachines: lowUtilizationMachines
+                };
+                
+            } catch (error) {
+                console.error('Error parsing WebEOR report:', error);
+                return null;
+            }
+        }
+
+        // Function to populate grievance form with machine staffing data
+        function populateGrievanceFormFromStaffing(reportData) {
+            // Format the machine list as a condensed paragraph
+            const machineList = reportData.machinesWithNegativeDiscrepancies.join(', ');
+            
+            // Populate Background section with staffing-specific content (condensed format)
+            const backgroundContent = `
+                <p>Management has violated Article 19 of the National Agreement, specifically MMO-125-20, by failing to properly complete and/or implement the authorized staffing package. This violation has resulted in understaffing of maintenance positions, improper tours per day assignment, and discrepancies between staffing values and the actual run data.</p>
+
+                <p><strong>FACTS:</strong> The current Machine Staffing Report dated ${reportData.reportDate} shows significant discrepancies between staffing values and calculated values. Specifically, the report identifies discrepancies in the following machines: ${machineList}.</p>
+
+                <p>The total staffing deficit across all machines is ${reportData.totalDifference.toFixed(2)} hours per year, as indicated in the summary table. This deficit is distributed across skill levels as follows: MM7: ${reportData.totalMM7Difference.toFixed(2)} hours, MPE9: ${reportData.totalMPE9Difference.toFixed(2)} hours, ET10: ${reportData.totalET10Difference.toFixed(2)} hours.</p>
+
+                <p>The pattern of understaffing is particularly evident in tours per day allocations, where multiple machines are assigned fewer tours than the calculated requirement. This understaffing has resulted in required maintenance work being bypassed and/or delayed. Management has not completed the staffing process in accordance with MMO-125-20, which requires annual review and updating. Management has failed to provide explanations for the changes in Full Time Equivalents (FTE) as required by MMO-125-20.</p>
+
+                <p><strong>CONTRACT PROVISIONS VIOLATED:</strong> MMO-125-20, ASM 531.7, EL-312 Section 211, and Article 38.4.</p>
+            `;
+            
+            // Populate Corrective Action section with staffing-specific remedies (condensed format)
+            const correctiveActionContent = `
+                <p>Management shall complete the proper staffing package in accordance with MMO-125-20 within 30 days. This includes providing written explanations for any deviations from calculated values as required by the MMO. Management shall adjust staffing to levels consistent with the calculated values in the Machine Staffing Report, including correcting the Tours/Day allocations to match calculated values, providing proper staffing hours for all maintenance categories (MM7, MPE9, ET10), and creating and posting the appropriate duty assignments within 14 days of package approval.</p>
+
+                <p>Management shall fill all positions in accordance with the authorized complement within 60 days of package approval. Management shall compensate the APWU bargaining unit employees designated by the Union at the appropriate overtime rate for all unworked and bypassed hours as set forth in the current Machine Staffing Report (${Math.abs(reportData.totalDifference).toFixed(2)} hours total). Management shall cease and desist from future violations of the cited contractual provisions, work jointly with the Union to develop a process for monitoring ongoing compliance with proper staffing requirements, and provide any other remedy the parties deem appropriate.</p>
+            `;
+            
+            // Update the content areas
+            document.getElementById('background-content').innerHTML = backgroundContent;
+            document.getElementById('corrective-action-content').innerHTML = correctiveActionContent;
+        }
+
+        // Function to handle WebEOR data (for validation purposes only - no text population)
+        function populateGrievanceFormFromWebEOR(reportData) {
+            // WebEOR report is imported for validation purposes only
+            // No text modification needed - the report serves as supporting documentation
+            // to validate the accuracy of the Machine Staffing Report
+            
+            // The WebEOR data is stored and will be attached to the grievance
+            // but does not generate any grievance language
+        }
+
+        // Enhanced save function to include both imported reports
+        function saveForm() {
+            try {
+                const formData = {};
+                
+                // Get ALL data cells
+                const allDataCells = document.querySelectorAll('.data-cell[data-field]');
+                allDataCells.forEach(cell => {
+                    const field = cell.getAttribute('data-field');
+                    
+                    // Special handling for radio button cell
+                    if (field === 'cell_5_4') {
+                        const selected = cell.querySelector('input[type="radio"]:checked');
+                        formData[field] = selected ? selected.value : '';
+                    } else {
+                        formData[field] = cell.textContent.trim();
+                    }
+                });
+                
+                // Get section content
+                formData.background = document.getElementById('background-content').innerHTML;
+                formData.corrective_action = document.getElementById('corrective-action-content').innerHTML;
+                formData.management_response = document.getElementById('management-response-content').innerHTML;
+                
+                // Add imported report information
+                if (importedStaffingReportPath) {
+                    formData.importedStaffingReportPath = importedStaffingReportPath;
+                    formData.importedStaffingReportData = importedStaffingReportData;
+                }
+                
+                if (importedWebEORReportPath) {
+                    formData.importedWebEORReportPath = importedWebEORReportPath;
+                    formData.importedWebEORReportData = importedWebEORReportData;
+                }
+                
+                // Create a complete HTML document with the current form state and attached reports
+                const currentHtml = createCompleteHtmlWithAttachedReports(true);
+                
+                // Create download
+                const blob = new Blob([currentHtml], { type: 'text/html' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                
+                // Generate filename with imported report names and timestamp
+                const timestamp = new Date().toISOString().slice(0, 19).replace(/[T:]/g, '_');
+                let filename = 'grievance_form_' + timestamp + '.html';
+                
+                // Create more descriptive filename based on imported reports
+                let filenameParts = ['Grievance'];
+                if (importedStaffingReportPath) {
+                    const staffingBaseName = importedStaffingReportPath.replace(/Machine_Staffing_Report_/, '').replace('.html', '');
+                    filenameParts.push('Staffing');
+                }
+                if (importedWebEORReportPath) {
+                    filenameParts.push('WebEOR');
+                }
+                filenameParts.push(timestamp);
+                filename = filenameParts.join('_') + '.html';
+                
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                
+                showStatus('Form saved successfully!', 'success');
+            } catch (error) {
+                console.error('Error saving form:', error);
+                showStatus('Error saving form: ' + error.message, 'error');
+            }
+        }
+
+        // Helper function to extract CSS from head content
+        function extractCSSFromHead(headContent) {
+            const parser = new DOMParser();
+            const tempDoc = parser.parseFromString(`<html><head>${headContent}</head></html>`, 'text/html');
+            
+            let extractedCSS = '';
+            
+            // Extract inline styles
+            const styleElements = tempDoc.querySelectorAll('style');
+            styleElements.forEach(style => {
+                extractedCSS += style.textContent + '\n';
+            });
+            
+            return extractedCSS;
+        }
+
+        // Modified to create a functional saved form
+        function createCompleteHtmlWithAttachedReports(forSavedForm = false) {
+            // Get the current document's HTML
+            let currentHtml = document.documentElement.outerHTML;
+            
+            // Remove all script tags from the saved form to prevent duplicate execution
+            currentHtml = currentHtml.replace(
+                /<script id="restoration-script">[\s\S]*?<\/script>/gi, 
+                ''
+            );
+            
+            // Update all form fields in the HTML string
+            const allDataCells = document.querySelectorAll('.data-cell[data-field]');
+            allDataCells.forEach(cell => {
+                const field = cell.getAttribute('data-field');
+                
+                if (field === 'cell_5_4') {
+                    const selected = cell.querySelector('input[type="radio"]:checked');
+                    if (selected) {
+                        // Update the radio button in the HTML string
+                        const radioRegex = new RegExp(`(<input[^>]*name="cell_5_4_radio"[^>]*value="${selected.value}"[^>]*)(>)`, 'g');
+                        currentHtml = currentHtml.replace(radioRegex, '$1 checked$2');
+                    }
+                } else {
+                    // Update text content for other cells
+                    const cellContent = cell.textContent.trim();
+                    if (cellContent) {
+                        const cellRegex = new RegExp(`(<td[^>]*data-field="${field}"[^>]*contenteditable="true"[^>]*>)[^<]*(</td>)`, 'g');
+                        currentHtml = currentHtml.replace(cellRegex, `$1${cellContent}$2`);
+                    }
+                }
+            });
+            
+            // Update content sections
+            const backgroundContent = document.getElementById('background-content').innerHTML;
+            const correctiveContent = document.getElementById('corrective-action-content').innerHTML;
+            const managementContent = document.getElementById('management-response-content').innerHTML;
+            
+            // Update background content
+            currentHtml = currentHtml.replace(
+                /(<span[^>]*id="background-content"[^>]*>).*?(<\/span>)/s,
+                `$1${backgroundContent}$2`
+            );
+            
+            // Update corrective action content
+            currentHtml = currentHtml.replace(
+                /(<span[^>]*id="corrective-action-content"[^>]*>).*?(<\/span>)/s,
+                `$1${correctiveContent}$2`
+            );
+            
+            // Update management response content
+            currentHtml = currentHtml.replace(
+                /(<span[^>]*id="management-response-content"[^>]*>).*?(<\/span>)/s,
+                `$1${managementContent}$2`
+            );
+            
+            let attachedReportsHtml = '';
+            
+            // Add special handling for saved form version
+            if (forSavedForm) {
+                // Remove all print styles from CSS
+                currentHtml = currentHtml.replace(
+                    /@media print \{[\s\S]*?\}/g,
+                    ''
+                );
+                
+                // Replace button container with only Save button
+                const simplifiedButtonContainer = `
+                    <div class="button-container">
+                        <button class="action-button" onclick="saveEditedForm()">Save</button>
+                    </div>`;
+                
+                currentHtml = currentHtml.replace(
+                    /<div class="button-container">[\s\S]*?<\/div>/,
+                    simplifiedButtonContainer
+                );
+                
+                // Remove import status indicators
+                currentHtml = currentHtml.replace(
+                    /<div id="importStatus"[\s\S]*?<\/div>/,
+                    ''
+                );
+                
+                // Remove hidden file inputs
+                currentHtml = currentHtml.replace(
+                    /<input type="file"[^>]*>/g,
+                    ''
+                );
+                
+                // Build all content to insert at once to avoid multiple replacements
+                let reportsAndScriptHtml = '';
+                
+                // Add preserved imported report data in hidden elements
+                if (importedStaffingReportContent) {
+                    // Escape the content to prevent HTML injection issues
+                    const escapedContent = importedStaffingReportContent
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;')
+                        .replace(/'/g, '&#39;');
+                    reportsAndScriptHtml += `<div id="savedStaffingReport" style="display:none;" data-path="${importedStaffingReportPath}" data-content="${escapedContent}"></div>`;
+                }
+                
+                if (importedWebEORReportContent) {
+                    // Escape the content to prevent HTML injection issues
+                    const escapedContent = importedWebEORReportContent
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;')
+                        .replace(/'/g, '&#39;');
+                    reportsAndScriptHtml += `<div id="savedWebEORReport" style="display:none;" data-path="${importedWebEORReportPath}" data-content="${escapedContent}"></div>`;
+                }
+                
+                // Add simplified initialization script for saved forms
+                reportsAndScriptHtml += `
+                    <script id="restoration-script">
+                        // Simplified save function for edited forms
+                        function saveEditedForm() {
+                            try {
+                                const formData = {};
+                                
+                                // Get ALL data cells
+                                const allDataCells = document.querySelectorAll('.data-cell[data-field]');
+                                allDataCells.forEach(cell => {
+                                    const field = cell.getAttribute('data-field');
+                                    
+                                    // Special handling for radio button cell
+                                    if (field === 'cell_5_4') {
+                                        const selected = cell.querySelector('input[type="radio"]:checked');
+                                        formData[field] = selected ? selected.value : '';
+                                    } else {
+                                        formData[field] = cell.textContent.trim();
+                                    }
+                                });
+                                
+                                // Get section content
+                                formData.background = document.getElementById('background-content').innerHTML;
+                                formData.corrective_action = document.getElementById('corrective-action-content').innerHTML;
+                                formData.management_response = document.getElementById('management-response-content').innerHTML;
+                                
+                                // Create download with current form state
+                                const currentHtml = document.documentElement.outerHTML;
+                                const blob = new Blob([currentHtml], { type: 'text/html' });
+                                const url = URL.createObjectURL(blob);
+                                const a = document.createElement('a');
+                                a.href = url;
+                                
+                                // Generate filename with timestamp
+                                const timestamp = new Date().toISOString().slice(0, 19).replace(/[T:]/g, '_');
+                                const filename = 'edited_grievance_form_' + timestamp + '.html';
+                                
+                                a.download = filename;
+                                document.body.appendChild(a);
+                                a.click();
+                                document.body.removeChild(a);
+                                URL.revokeObjectURL(url);
+                                
+                                // Show success message
+                                alert('Form saved successfully!');
+                            } catch (error) {
+                                console.error('Error saving form:', error);
+                                alert('Error saving form: ' + error.message);
+                            }
+                        }
+                        
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Load saved staffing report data
+                            const savedStaffing = document.getElementById('savedStaffingReport');
+                            if (savedStaffing) {
+                                // Data is preserved for reference but not actively used
+                            }
+                            
+                            // Load saved WebEOR report data
+                            const savedWebEOR = document.getElementById('savedWebEORReport');
+                            if (savedWebEOR) {
+                                // Data is preserved for reference but not actively used
+                            }
+                            
+                            // Make all cells editable
+                            const allDataCells = document.querySelectorAll('.data-cell');
+                            allDataCells.forEach(cell => {
+                                // Skip radio button cell
+                                if (cell.getAttribute('data-field') === 'cell_5_4') {
+                                    cell.contentEditable = false;
+                                    return;
+                                }
+                                cell.contentEditable = true;
+                            });
+                        });
+                    <\/script>
+                `;
+                
+                // Single replacement to avoid conflicts
+                currentHtml = currentHtml.replace('</body>', reportsAndScriptHtml + '</body>');
+            }
+            
+            // Add machine staffing report if available
+            if (importedStaffingReportContent) {
+                const parser = new DOMParser();
+                const reportDoc = parser.parseFromString(importedStaffingReportContent, 'text/html');
+                const reportHead = reportDoc.head ? reportDoc.head.innerHTML : '';
+                const reportBody = reportDoc.body ? reportDoc.body.innerHTML : '';
+                
+                attachedReportsHtml += `
+                    <div class="attached-report">
+                        <h2>Attached: Machine Staffing Report</h2>
+                        <p><em>Source: ${importedStaffingReportPath}</em></p>
+                        <div style="page-break-before: always;">
+                            <style>
+                                ${extractCSSFromHead(reportHead)}
+                                
+                                .attached-report table {
+                                    border-collapse: collapse !important;
+                                }
+                                .attached-report table td,
+                                .attached-report table th {
+                                    border: 1px solid #ddd !important;
+                                }
+                                .attached-report .positive {
+                                    color: green !important;
+                                    font-weight: bold !important;
+                                }
+                                .attached-report .negative {
+                                    color: red !important;
+                                    font-weight: bold !important;
+                                }
+                            </style>
+                            ${reportBody}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Add WebEOR report if available
+            if (importedWebEORReportContent) {
+                const parser = new DOMParser();
+                const reportDoc = parser.parseFromString(importedWebEORReportContent, 'text/html');
+                const reportHead = reportDoc.head ? reportDoc.head.innerHTML : '';
+                const reportBody = reportDoc.body ? reportDoc.body.innerHTML : '';
+                
+                attachedReportsHtml += `
+                    <div class="attached-report">
+                        <h2>Attached: WebEOR Analysis Report</h2>
+                        <p><em>Source: ${importedWebEORReportPath}</em></p>
+                        <div style="page-break-before: always;">
+                            <style>
+                                ${extractCSSFromHead(reportHead)}
+                                
+                                .attached-report table {
+                                    border-collapse: collapse !important;
+                                }
+                                .attached-report table td,
+                                .attached-report table th {
+                                    border: 1px solid #ddd !important;
+                                }
+                            </style>
+                            ${reportBody}
+                        </div>
+                    </div>
+                `;
+            }
+            
+            // Insert all attached reports before the closing body tag
+            if (attachedReportsHtml) {
+                currentHtml = currentHtml.replace('</body>', attachedReportsHtml + '</body>');
+            }
+
+            return currentHtml;
+        }
+
+        // Enhanced print function to include both attached reports
+        function printToPDF() {
+            const attachedContainer = document.getElementById('attachedReportsContainer');
+            let attachedHtml = '';
+            
+            // Add machine staffing report if available
+            if (importedStaffingReportContent) {
+                const parser = new DOMParser();
+                const reportDoc = parser.parseFromString(importedStaffingReportContent, 'text/html');
+                const reportHead = reportDoc.head ? reportDoc.head.innerHTML : '';
+                const reportBody = reportDoc.body ? reportDoc.body.innerHTML : '';
+                
+                attachedHtml += `
+                    <div class="attached-report">
+                        <h2>Attached: Machine Staffing Report</h2>
+                        <p><em>Source: ${importedStaffingReportPath || 'Imported Report'}</em></p>
+                        <style>
+                            ${extractCSSFromHead(reportHead)}
+                            
+                            table {
+                                border-collapse: collapse !important;
+                            }
+                            table td, table th {
+                                border: 1px solid #ddd !important;
+                                padding: 4px !important;
+                            }
+                            .positive {
+                                color: green !important;
+                                font-weight: bold !important;
+                            }
+                            .negative {
+                                color: red !important;
+                                font-weight: bold !important;
+                            }
+                        </style>
+                        ${reportBody}
+                    </div>
+                `;
+            }
+            
+            // Add WebEOR report if available
+            if (importedWebEORReportContent) {
+                const parser = new DOMParser();
+                const reportDoc = parser.parseFromString(importedWebEORReportContent, 'text/html');
+                const reportHead = reportDoc.head ? reportDoc.head.innerHTML : '';
+                const reportBody = reportDoc.body ? reportDoc.body.innerHTML : '';
+                
+                attachedHtml += `
+                    <div class="attached-report">
+                        <h2>Attached: WebEOR Analysis Report</h2>
+                        <p><em>Source: ${importedWebEORReportPath || 'Imported Report'}</em></p>
+                        <style>
+                            ${extractCSSFromHead(reportHead)}
+                            
+                            table {
+                                border-collapse: collapse !important;
+                            }
+                            table td, table th {
+                                border: 1px solid #ddd !important;
+                                padding: 4px !important;
+                            }
+                        </style>
+                        ${reportBody}
+                    </div>
+                `;
+            }
+            
+            // Show the attached reports for printing
+            if (attachedHtml) {
+                attachedContainer.innerHTML = attachedHtml;
+                attachedContainer.style.display = 'block';
+            }
+            
+            // Print the document
+            window.print();
+            
+            // Hide the attached reports after printing
+            setTimeout(() => {
+                attachedContainer.style.display = 'none';
+                attachedContainer.innerHTML = '';
+            }, 1000);
+        }
+
+        // Enhanced clear function
+        function clearForm() {
+            if (confirm('Are you sure you want to clear all form data and imported reports? This cannot be undone.')) {
+                const allDataCells = document.querySelectorAll('.data-cell');
+                allDataCells.forEach(cell => {
+                    const field = cell.getAttribute('data-field');
+                    
+                    // Special handling for radio button cell
+                    if (field === 'cell_5_4') {
+                        const radios = cell.querySelectorAll('input[type="radio"]');
+                        radios.forEach(radio => radio.checked = false);
+                    } else {
+                        cell.textContent = '';
+                    }
+                });
+                
+                // Clear content sections
+                document.getElementById('background-content').innerHTML = '&nbsp;';
+                document.getElementById('corrective-action-content').innerHTML = '&nbsp;';
+                document.getElementById('management-response-content').innerHTML = '&nbsp;';
+                
+                // Clear all imported report data
+                importedStaffingReportData = null;
+                importedStaffingReportPath = null;
+                importedStaffingReportContent = null;
+                importedWebEORReportData = null;
+                importedWebEORReportPath = null;
+                importedWebEORReportContent = null;
+                
+                // Update status indicators
+                updateImportStatus();
+                
+                localStorage.removeItem('grievanceFormData');
+                showStatus('Form and all imported reports cleared successfully!', 'success');
+            }
+        }
+
+        // Enhanced save to localStorage function
+        function saveToLocalStorage() {
+            try {
+                const formData = {};
+                
+                const allDataCells = document.querySelectorAll('.data-cell[data-field]');
+                allDataCells.forEach(cell => {
+                    const field = cell.getAttribute('data-field');
+                    
+                    if (field === 'cell_5_4') {
+                        const selected = cell.querySelector('input[type="radio"]:checked');
+                        formData[field] = selected ? selected.value : '';
+                    } else {
+                        formData[field] = cell.textContent.trim();
+                    }
+                });
+                
+                formData.background = document.getElementById('background-content').innerHTML;
+                formData.corrective_action = document.getElementById('corrective-action-content').innerHTML;
+                formData.management_response = document.getElementById('management-response-content').innerHTML;
+                
+                // Save both imported report types
+                if (importedStaffingReportPath) {
+                    formData.importedStaffingReportPath = importedStaffingReportPath;
+                    formData.importedStaffingReportData = importedStaffingReportData;
+                }
+                
+                if (importedWebEORReportPath) {
+                    formData.importedWebEORReportPath = importedWebEORReportPath;
+                    formData.importedWebEORReportData = importedWebEORReportData;
+                }
+                
+                localStorage.setItem('grievanceFormData', JSON.stringify(formData));
+            } catch (error) {
+                console.error('Error auto-saving:', error);
+            }
+        }
+
+        // Enhanced load saved data function
+        function loadSavedData() {
+            try {
+                const savedData = localStorage.getItem('grievanceFormData');
+                if (savedData) {
+                    const formData = JSON.parse(savedData);
+                    
+                    Object.keys(formData).forEach(field => {
+                        if (field === 'background') {
+                            document.getElementById('background-content').innerHTML = formData[field];
+                        } else if (field === 'corrective_action') {
+                            document.getElementById('corrective-action-content').innerHTML = formData[field];
+                        } else if (field === 'management_response') {
+                            document.getElementById('management-response-content').innerHTML = formData[field];
+                        } else if (field === 'importedStaffingReportPath') {
+                            importedStaffingReportPath = formData[field];
+                        } else if (field === 'importedStaffingReportData') {
+                            importedStaffingReportData = formData[field];
+                        } else if (field === 'importedWebEORReportPath') {
+                            importedWebEORReportPath = formData[field];
+                        } else if (field === 'importedWebEORReportData') {
+                            importedWebEORReportData = formData[field];
+                        } else {
+                            const cell = document.querySelector(`[data-field="${field}"]`);
+                            if (cell) {
+                                // Special handling for radio button cell
+                                if (field === 'cell_5_4') {
+                                    const radio = cell.querySelector(`input[value="${formData[field]}"]`);
+                                    if (radio) radio.checked = true;
+                                } else {
+                                    cell.textContent = formData[field];
+                                }
+                            }
+                        }
+                    });
+                    
+                    // Update status indicators for imported reports
+                    updateImportStatus();
+                    
+                    // Show status if reports were previously imported
+                    const importedReports = [];
+                    if (importedStaffingReportPath) importedReports.push(`Staffing: ${importedStaffingReportPath}`);
+                    if (importedWebEORReportPath) importedReports.push(`WebEOR: ${importedWebEORReportPath}`);
+                    
+                    if (importedReports.length > 0) {
+                        showStatus(`Previously imported reports: ${importedReports.join(', ')}`, 'info');
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading saved data:', error);
+            }
+        }
+
+        function makeAllCellsEditable() {
+            const allDataCells = document.querySelectorAll('.data-cell');
+            allDataCells.forEach(cell => {
+                // Skip radio button cell
+                if (cell.getAttribute('data-field') === 'cell_5_4') {
+                    cell.contentEditable = false;
+                    return;
+                }
+                
+                cell.contentEditable = true;
+                
+                if (!cell.hasAttribute('data-field')) {
+                    const rowIndex = cell.parentNode.rowIndex;
+                    const cellIndex = cell.cellIndex;
+                    cell.setAttribute('data-field', `cell_${rowIndex}_${cellIndex}`);
+                }
+            });
+        }
+
+        function setupAutoSave() {
+            // Auto-save on content changes
+            document.addEventListener('input', saveToLocalStorage);
+            document.addEventListener('change', saveToLocalStorage);
+        }
+
+        function makeContentEditable() {
+            // Already handled in HTML
+        }
+
+        // Modified initialization to handle saved forms
+        document.addEventListener('DOMContentLoaded', function() {
+            makeAllCellsEditable();
+            
+            // Check for saved reports in hidden containers
+            const savedStaffing = document.getElementById('savedStaffingReport');
+            if (savedStaffing) {
+                importedStaffingReportPath = savedStaffing.getAttribute('data-path');
+                importedStaffingReportContent = savedStaffing.innerHTML;
+            }
+            
+            const savedWebEOR = document.getElementById('savedWebEORReport');
+            if (savedWebEOR) {
+                importedWebEORReportPath = savedWebEOR.getAttribute('data-path');
+                importedWebEORReportContent = savedWebEOR.innerHTML;
+            }
+            
+            loadSavedData();
+            setupAutoSave();
+            makeContentEditable();
+            updateImportStatus();
+        });
+    </script>
+
+</body>
+</html>

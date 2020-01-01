@@ -1,0 +1,136 @@
+---
+jd: ""
+type: handbook
+handbook_id: "MMO-056-13"
+handbook_section: ""
+title: MMO-056-13 LAN-AA Labor Lookup
+effective: ""
+status: complete
+source_file: "../_sources/LaborChecklistProd/Machine Labor Rubrics/MMO-056-13-LAN-AA/MMO-056-13-Labor-Lookup.csv"
+source_url: ""
+source_pages: ""
+source_locator: "Machine Labor Rubrics/MMO-056-13-LAN-AA/MMO-056-13-Labor-Lookup.csv"
+source_checked: 2026-10-27
+transcribed: 2026-10-27
+transcription_notes: "Generated from the archived labor-lookup CSV (verbatim figures; columns vary by MMO)."
+topics: [topic/job-security/subcontracting]
+references:
+  - target: "[[32.17 MMO Rubric Library — Index]]"
+    type: implements
+---
+
+# MMO-056-13 LAN-AA Labor Lookup
+
+<!-- source: born-digital CSV; see source_file -->
+
+## Full text
+
+### Labor lookup data
+
+| Machines | Total (hrs/yr) |
+|---|---|
+| 1 | 64.06 |
+| 2 | 70.92 |
+| 3 | 77.78 |
+| 4 | 84.64 |
+| 5 | 91.5 |
+| 6 | 98.36 |
+| 7 | 105.22 |
+| 8 | 112.08 |
+| 9 | 118.94 |
+| 10 | 125.8 |
+| 11 | 132.66 |
+| 12 | 139.52 |
+| 13 | 146.38 |
+| 14 | 153.24 |
+| 15 | 160.1 |
+| 16 | 166.96 |
+| 17 | 173.82 |
+| 18 | 180.68 |
+| 19 | 187.54 |
+| 20 | 194.4 |
+| 21 | 201.26 |
+| 22 | 208.12 |
+| 23 | 214.98 |
+| 24 | 221.84 |
+| 25 | 228.7 |
+| 26 | 235.56 |
+| 27 | 242.42 |
+| 28 | 249.28 |
+| 29 | 256.14 |
+| 30 | 263 |
+| 31 | 269.86 |
+| 32 | 276.72 |
+| 33 | 283.58 |
+| 34 | 290.44 |
+| 35 | 297.3 |
+| 36 | 304.16 |
+| 37 | 311.02 |
+| 38 | 317.88 |
+| 39 | 324.74 |
+| 40 | 331.6 |
+| 41 | 338.46 |
+| 42 | 345.32 |
+| 43 | 352.18 |
+| 44 | 359.04 |
+| 45 | 365.9 |
+| 46 | 372.76 |
+| 47 | 379.62 |
+| 48 | 386.48 |
+| 49 | 393.34 |
+| 50 | 400.2 |
+| 51 | 407.06 |
+| 52 | 413.92 |
+| 53 | 420.78 |
+| 54 | 427.64 |
+| 55 | 434.5 |
+| 56 | 441.36 |
+| 57 | 448.22 |
+| 58 | 455.08 |
+| 59 | 461.94 |
+| 60 | 468.8 |
+| 61 | 475.66 |
+| 62 | 482.52 |
+| 63 | 489.38 |
+| 64 | 496.24 |
+| 65 | 503.1 |
+| 66 | 509.96 |
+| 67 | 516.82 |
+| 68 | 523.68 |
+| 69 | 530.54 |
+| 70 | 537.4 |
+| 71 | 544.26 |
+| 72 | 551.12 |
+| 73 | 557.98 |
+| 74 | 564.84 |
+| 75 | 571.7 |
+| 76 | 578.56 |
+| 77 | 585.42 |
+| 78 | 592.28 |
+| 79 | 599.14 |
+| 80 | 606 |
+| 81 | 612.86 |
+| 82 | 619.72 |
+| 83 | 626.58 |
+| 84 | 633.44 |
+| 85 | 640.3 |
+| 86 | 647.16 |
+| 87 | 654.02 |
+| 88 | 660.88 |
+| 89 | 667.74 |
+| 90 | 674.6 |
+| 91 | 681.46 |
+| 92 | 688.32 |
+| 93 | 695.18 |
+| 94 | 702.04 |
+| 95 | 708.9 |
+| 96 | 715.76 |
+| 97 | 722.62 |
+| 98 | 729.48 |
+| 99 | 736.34 |
+| 100 | 743.2 |
+
+## Related
+
+- [[Sources/LaborChecklistProd/Machine Labor Rubrics/MMO-056-13-LAN-AA/MMO-056-13-Labor-Lookup.csv|MMO-056-13-Labor-Lookup.csv]] — raw CSV (in-vault)
+- [[Sources/LaborChecklistProd/Machine Labor Rubrics/MMO-056-13-LAN-AA/MMO-056-13.pdf|LAN-AA]] — governing MMO PDF

@@ -1,0 +1,7 @@
+Machine Type,Operation (days/wk),Routine Servicing (hrs/yr),Repair (hrs/yr),Routine Servicing + Repair Time (hrs/yr),Nonproductive Time (hrs/yr),Total (hrs/yr)
+Single AFCS,5,69.3,6.93,76.23,7.623,83.853
+Single AFCS,6,83.2,8.32,91.52,9.152,100.672
+Single AFCS,7,97.1,9.71,106.81,10.681,117.491
+Dual AFCS,5,86.7,8.67,95.37,9.537,104.907
+Dual AFCS,6,104.0,10.4,114.4,11.44,125.84
+Dual AFCS,7,121.3,12.13,133.43,13.343,146.773

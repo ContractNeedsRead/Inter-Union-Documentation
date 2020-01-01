@@ -1,0 +1,54 @@
+---
+jd: ""
+type: handbook
+handbook_id: "MMO-144-20"
+handbook_section: ""
+title: MMO-144-20 AFSM100-AF Labor Lookup
+effective: ""
+status: complete
+source_file: "../_sources/LaborChecklistProd/Machine Labor Rubrics/MMO-144-20-AFSM100-AF/MMO-144-20-Labor-Lookup.csv"
+source_url: ""
+source_pages: ""
+source_locator: "Machine Labor Rubrics/MMO-144-20-AFSM100-AF/MMO-144-20-Labor-Lookup.csv"
+source_checked: 2026-10-27
+transcribed: 2026-10-27
+transcription_notes: "Generated from the archived labor-lookup CSV (verbatim figures; columns vary by MMO)."
+topics: [topic/job-security/subcontracting]
+references:
+  - target: "[[32.17 MMO Rubric Library — Index]]"
+    type: implements
+---
+
+# MMO-144-20 AFSM100-AF Labor Lookup
+
+<!-- source: born-digital CSV; see source_file -->
+
+## Full text
+
+### Labor lookup data
+
+| Machine Type | Operation (days/wk) | Tours/Day | Operational Maintenance (hrs/yr) | Total (hrs/yr) |
+|---|---|---|---|---|
+| non-ATHS TR1 | 5 | 1 | 234.00 | 2298.75 |
+| non-ATHS TR1 | 6 | 1 | 280.80 | 2600.85 |
+| non-ATHS TR1 | 7 | 1 | 327.60 | 2902.94 |
+| non-ATHS TR1 | 5 | 2 | 359.67 | 2424.42 |
+| non-ATHS TR1 | 6 | 2 | 431.60 | 2751.65 |
+| non-ATHS TR1 | 7 | 2 | 503.54 | 3078.88 |
+| non-ATHS TR1 | 5 | 3 | 485.34 | 2550.09 |
+| non-ATHS TR1 | 6 | 3 | 582.40 | 2902.45 |
+| non-ATHS TR1 | 7 | 3 | 679.47 | 3254.81 |
+| ATHS TR1 | 5 | 1 | 234.00 | 2590.67 |
+| ATHS TR1 | 6 | 1 | 280.80 | 2947.31 |
+| ATHS TR1 | 7 | 1 | 327.60 | 3303.94 |
+| ATHS TR1 | 5 | 2 | 359.67 | 2716.34 |
+| ATHS TR1 | 6 | 2 | 431.60 | 3098.11 |
+| ATHS TR1 | 7 | 2 | 503.54 | 3479.88 |
+| ATHS TR1 | 5 | 3 | 485.34 | 2842.01 |
+| ATHS TR1 | 6 | 3 | 582.40 | 3248.91 |
+| ATHS TR1 | 7 | 3 | 679.47 | 3655.81 |
+
+## Related
+
+- [[Sources/LaborChecklistProd/Machine Labor Rubrics/MMO-144-20-AFSM100-AF/MMO-144-20-Labor-Lookup.csv|MMO-144-20-Labor-Lookup.csv]] — raw CSV (in-vault)
+- [[Sources/LaborChecklistProd/Machine Labor Rubrics/MMO-144-20-AFSM100-AF/MMO-144-20.pdf|AFSM100-AF]] — governing MMO PDF

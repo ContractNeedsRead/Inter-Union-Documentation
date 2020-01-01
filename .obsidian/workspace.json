@@ -1,0 +1,261 @@
+{
+  "main": {
+    "id": "52a215678720d609",
+    "type": "split",
+    "children": [
+      {
+        "id": "e7921ae802b4ba4f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "027164e6aea0a4ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "20-29 Cross-union topics/29 Job security & subcontracting/29.02 Subcontracting.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "29.02 Subcontracting"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "982c7c0a92c8816f",
+    "type": "split",
+    "children": [
+      {
+        "id": "bbdaf8237eb91b2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86716979f00dfc32",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8c375f8681ec2924",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4e69574a9b92a507",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "196f1caef8e1dc3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "89913bc2dc08c6ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca173e803425da95",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "30-39 External authorities/34 Statutes & regulations/34.13 FECA 5 USC 8102.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "34fcd22f453c9c98",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "30-39 External authorities/34 Statutes & regulations/34.13 FECA 5 USC 8102.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "169d7dfd40737d62",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "3c254b2a5a0402d3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "2be8e5ef5d8d96dd",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "30-39 External authorities/34 Statutes & regulations/34.13 FECA 5 USC 8102.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "fe19f8235fa0e11a",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {},
+              "icon": "ag-node-list",
+              "title": "Juggl nodes"
+            }
+          },
+          {
+            "id": "58114dffa6bb29a3",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {},
+              "icon": "ag-style",
+              "title": "Juggl style"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "juggl:Juggl global graph": false
+    }
+  },
+  "active": "027164e6aea0a4ab",
+  "lastOpenFiles": [
+    "Sources/LaborChecklistProd/Machine Labor Rubrics/MMO-002-18-SHRED-CA/MMO-002-18.pdf",
+    "20-29 Cross-union topics/22 Hours & scheduling/22.02 Work Schedules & Limits.md",
+    "2026-10-27.md",
+    "20-29 Cross-union topics/22 Hours & scheduling/22.01 Hours of Work.md",
+    "20-29 Cross-union topics/21 Compensation/21.05 Penalty Pay.md",
+    "20-29 Cross-union topics/21 Compensation/21.01 Compensation.md",
+    "10-19 Contracts/12 APWU/12.10 Article 10 — Leave/10.3 Choice of Vacation Period.md",
+    "10-19 Contracts/12 APWU/12.04 Article 4 — Technological and Mechanization Changes/12.04 Article 4 — Technological and Mechanization Changes.md",
+    "10-19 Contracts/11 NALC/11.04 Article 4 — Technological and Mechanization Changes/11.04 Article 4 — Technological and Mechanization Changes.md",
+    "30-39 External authorities/34 Statutes & regulations/34.08 RIF 5 USC 3502.md",
+    "30-39 External authorities/31 ELM/31.12 ELM 666.3 Whistleblower Protection.md",
+    "Sources/LaborChecklistProd/Machine Labor Rubrics/MMO-036-23-SDUS-EA/MMO-036-23.pdf",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-036-23 SDUS-EA Labor Lookup.md",
+    "10-19 Contracts/15 MOUs & side letters/15.02 APWU MOUs/Expedited Arbitration.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-041-98 TOWVE-LA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-041-04 SSIU-GA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-040-98 IDUCT-AA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-040-13 LCREM-AA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-040-04 SSIU-CA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-039-98 CONTL-BA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-038-98 CONTU-AA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-038-98 CONTL-AA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-038-01 IDUCT-AA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-037-98 RSR-AA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-037-98 RACK-AA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-037-18 COMPACT-BA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups/MMO-037-18 COMPACT-AA Labor Lookup.md",
+    "30-39 External authorities/32 Handbooks/32.25 Labor Lookups",
+    "Sources/Steward Training/APWU Contract/page_150.png",
+    "Sources/Steward Training/Large Office Issues Workshop/RI-399 Documents/2018 Update MOU Q&As - 8-10-18.pdf",
+    "Sources/Steward Training/Labor Law Fundamentals Workshop/Labor Law.pdf",
+    "Sources/Steward Training/Innovative Organizing Training/Step 4 APWU Re Orientation.pdf",
+    "Sources/Steward Training/Innovative Organizing Training/3 PSE Brochure REV Mar 2022 Benefits at Glance.pdf",
+    "Sources/Steward Training/Innovative Organizing Training/2 Welcome to the APWU Booklet.pdf",
+    "Sources/Steward Training/Innovative Organizing Training/1 Organization Department Power Point.pdf",
+    "Sources/Steward Training/Innovative Organizing Training/1 2022 Organizing Journal National Convention.pdf",
+    "Sources/Steward Training/Fighting Discipline/DISCIPLINE BOOK Revised 2023.pdf",
+    "Sources/Steward Training/APWU Contract/page_99.png",
+    "Sources/Steward Training/APWU Contract/page_98.png",
+    "Sources/Steward Training/APWU Contract/page_97.png",
+    "Sources/Steward Training/APWU Contract/page_96.png",
+    "Sources/Steward Training/APWU Contract/page_95.png",
+    "Sources/Steward Training/APWU Contract/page_94.png",
+    "Sources/Steward Training/APWU Contract/page_93.png",
+    "Sources/Steward Training/APWU Contract/page_92.png",
+    "Sources/Steward Training/APWU Contract/page_91.png"
+  ]
+}

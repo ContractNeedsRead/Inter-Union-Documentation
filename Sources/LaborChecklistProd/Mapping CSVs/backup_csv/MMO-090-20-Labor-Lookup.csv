@@ -1,0 +1,4 @@
+Operation (days/wk),Routine Servicing (hrs/yr),Repair (hrs/yr),Routine Servicing + Repair Time (hrs/yr),Nonproductive Time (hrs/yr),Total (hrs/yr)
+5,2.2,0.66,2.86,0.29,72.48
+6,2.2,0.66,2.86,0.29,86.35
+7,2.2,0.66,2.86,0.29,100.21

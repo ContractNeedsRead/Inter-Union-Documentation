@@ -1,0 +1,44 @@
+---
+jd: ""
+type: handbook
+handbook_id: "MMO-149-15"
+handbook_section: ""
+title: MMO-149-15 Labor Lookup
+effective: ""
+status: complete
+source_file: "../_sources/LaborChecklistProd/Mapping CSVs/backup_csv/MMO-149-15-Labor-Lookup.csv"
+source_url: ""
+source_pages: ""
+source_locator: "Mapping CSVs/backup_csv/MMO-149-15-Labor-Lookup.csv"
+source_checked: 2026-10-27
+transcribed: 2026-10-27
+transcription_notes: "Generated from the archived labor-lookup CSV (verbatim figures; columns vary by MMO)."
+topics: [topic/job-security/subcontracting]
+references:
+  - target: "[[32.17 MMO Rubric Library — Index]]"
+    type: implements
+---
+
+# MMO-149-15 Labor Lookup
+
+<!-- source: born-digital CSV; see source_file -->
+
+## Full text
+
+### Labor lookup data
+
+| Operation (days/wk) | Tours/Day | Routine Servicing (hrs/yr) | Repair (hrs/yr) | Routine Servicing + Repair Time (hrs/yr) | Nonproductive Time (hrs/yr) | Total Servicing (hrs/yr) | Operational Maintenance (hrs/yr) | Total (hrs/yr) |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 1 | 821.15 | 246.345 | 1067.495 | 138.77435 | 1206.26935 | 251.33 | 1457.59935 |
+| 6 | 1 | 958.95 | 287.685 | 1246.635 | 162.06255 | 1408.69755 | 301.6 | 1710.29755 |
+| 7 | 1 | 1096.75 | 329.025 | 1425.775 | 185.35075 | 1611.12575 | 351.87 | 1962.99575 |
+| 5 | 2 | 821.15 | 246.345 | 1067.495 | 138.77435 | 1206.26935 | 502.66 | 1708.92935 |
+| 6 | 2 | 958.95 | 287.685 | 1246.635 | 162.06255 | 1408.69755 | 603.2 | 2011.89755 |
+| 7 | 2 | 1096.75 | 329.025 | 1425.775 | 185.35075 | 1611.12575 | 703.74 | 2314.86575 |
+| 5 | 3 | 821.15 | 246.345 | 1067.495 | 138.77435 | 1206.26935 | 753.99 | 1960.25935 |
+| 6 | 3 | 958.95 | 287.685 | 1246.635 | 162.06255 | 1408.69755 | 904.8 | 2313.49755 |
+| 7 | 3 | 1096.75 | 329.025 | 1425.775 | 185.35075 | 1611.12575 | 1055.61 | 2666.73575 |
+
+## Related
+
+- [[Sources/LaborChecklistProd/Mapping CSVs/backup_csv/MMO-149-15-Labor-Lookup.csv|MMO-149-15-Labor-Lookup.csv]] — raw CSV (in-vault)

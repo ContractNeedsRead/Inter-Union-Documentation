@@ -1,0 +1,4 @@
+Equipment Code,Routine Servicing (hrs/yr),Repair (hrs/yr),Routine Servicing + Repair Time (hrs/yr),Nonproductive Time (hrs/yr),Total Servicing (hrs/yr),Total (hrs/yr)
+FRS_AA,9.28,2.79,12.07,1.21,13.28,22.56
+FRS_AB,1.65,0.5,2.15,0.22,2.37,4.02
+FRS_AC,4.22,1.27,5.49,0.55,6.04,10.26

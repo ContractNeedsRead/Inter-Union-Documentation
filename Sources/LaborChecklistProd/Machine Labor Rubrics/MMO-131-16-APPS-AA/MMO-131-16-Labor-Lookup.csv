@@ -1,0 +1,7 @@
+Machine Type,Operation (days/wk),Operational Maintenance (hrs/yr),Total (hrs/yr)
+Single Sided APPS,6,1538,4220
+Single Sided APPS,7,1794,4924
+Dual Sided APPS Running One Side,6,1698,4672
+Dual Sided APPS Running One Side,7,1981,5450
+Dual Sided APPS Running Two Sides,6,2374,6847
+Dual Sided APPS Running Two Sides,7,2769,7988

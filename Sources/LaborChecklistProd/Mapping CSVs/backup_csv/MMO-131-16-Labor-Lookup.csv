@@ -1,0 +1,7 @@
+Machine Type,Operation (days/wk),Routine Servicing (hrs/yr),Repair (hrs/yr),Routine Servicing + Repair Time (hrs/yr),Nonproductive Time (hrs/yr),Total Servicing (hrs/yr),Operational Maintenance (hrs/yr),Total (hrs/yr)
+Single Sided APPS,6,1875,562.5,2437.5,244,2681.5,1538,4219.5
+Single Sided APPS,7,2188,656.4,2844.4,285,3129.4,1794,4923.4
+Dual Sided APPS Running One Side,6,2079,623.7,2702.7,271,2973.7,1698,4671.7
+Dual Sided APPS Running One Side,7,2425,727.5,3152.5,316,3468.5,1981,5449.5
+Dual Sided APPS Running Two Sides,6,3127,938.1,4065.1,407,4472.1,2374,6846.1
+Dual Sided APPS Running Two Sides,7,3649,1094.7,4743.7,475,5218.7,2769,7987.7
