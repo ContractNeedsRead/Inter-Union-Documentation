@@ -1,9 +1,11 @@
-# Inter-Union-Vault
+# Inter-Union-Documentation
 
 > **Four unions, one employer, four contracts that were never meant to be read together.**
 > This vault makes them legible to each other — so a rank-and-file member of any craft can
 > see, in one place, what we share and what still divides us. The goal is not just knowledge:
 > it is the structural groundwork for going from **four unions to one**.
+
+**Repository:** https://github.com/ContractNeedsRead/Inter-Union-Documentation
 
 ---
 
@@ -20,6 +22,87 @@ Every note obeys the same discipline:
 - **Typed links mean something** — `modifies`, `implements`, `clarifies`, `divergent`, `parallel` — the edge says what the relationship is, not just that one exists.
 - **Hand-written comparison tables** — the topic hubs are written, not generated, because the differences are findings, not data.
 - **Two documented exceptions only** — the NPMHU wage tables (raster images in the printed contract) and one source defect (§29.2B ends mid-sentence) are flagged, not guessed around.
+
+## Get the vault onto your computer (no command line needed)
+
+This is a folder of Markdown files plus a PDF library. You do not need Git, and the only
+software you need to install is Obsidian. The steps below are written for Windows; Mac and
+Linux are the same except for the extraction step.
+
+**Step 1 — Download the repository**
+
+1. Go to https://github.com/ContractNeedsRead/Inter-Union-Documentation
+2. Click the green **Code** button.
+3. Click **Download ZIP**.
+
+The archive is roughly **1.4 GB** — it contains the full PDF library — so give it time.
+
+If the download stalls or fails partway (GitHub sometimes times out on archives this large),
+use **GitHub Desktop** instead: download it free from https://desktop.github.com, install it,
+sign in with a free GitHub account (or skip sign-in if it lets you), then
+**File → Clone repository → URL**, paste the repository URL above, and choose a local path
+such as `C:\Vault`.
+
+**Step 2 — Extract it**
+
+1. Open your Downloads folder.
+2. Right-click the `.zip` file → **Extract All…**
+3. Choose a short, simple destination such as `C:\Vault`.
+
+Do **not** double-click into the ZIP and open files from there. Obsidian needs real files on
+disk, not files inside an archive.
+
+> **Tip:** Windows' built-in extractor can fail on archives this large, or on deep folder
+> paths. If it errors out, install **7-Zip** (free, https://7-zip.org), then right-click the
+> ZIP → **7-Zip → Extract to "C:\Vault\"**.
+
+When extraction finishes you should have one folder containing `README.md` and the numbered
+areas (`00-09 Meta & system`, `10-19 Contracts`, `20-29 Cross-union topics`,
+`30-39 External authorities`, `40-49 Organizing materials`, `Sources`).
+
+**Step 3 — Install Obsidian**
+
+1. Go to https://obsidian.md/download
+2. Download the Windows installer and run it. No administrator rights are needed.
+3. On first launch you can skip the account and pricing prompts — Obsidian is free for
+   personal use and does not require an account.
+
+**Step 4 — Open the vault**
+
+1. On Obsidian's start screen, click **Open folder as vault**.
+2. Navigate to the folder that directly contains `README.md` — for example
+   `C:\Vault\Inter-Union-Documentation-main` — and click **Select Folder**.
+
+Pick the folder that *contains* `README.md`, not the folder above it.
+
+Obsidian may ask whether you trust the author and want to enable plugins. This vault ships
+no plugins, so either choice is fine. Obsidian will create a hidden `.obsidian` folder for
+your personal settings — that is normal and stays on your machine.
+
+**Step 5 — Find your way around**
+
+- You are reading the front door. Everything else is one click or one search away.
+- **Ctrl+O** opens the quick switcher — type `21.03` or `Overtime` to jump straight to a note.
+- **Ctrl+G** opens the graph view. That is the view shown in the time-lapse GIF.
+- `[[Double-bracket links]]` in the text are clickable. Notes that do not exist yet are the
+  gaps listed at the bottom of this file — they are honest placeholders, not broken links.
+
+**Keeping it up to date**
+
+Each drop is published as a single fresh snapshot rather than an incremental history, so
+updating means downloading the new ZIP and replacing the folder. **Keep your own notes
+outside the vault**, or back them up separately, so replacing a snapshot never costs you work.
+
+**Troubleshooting**
+
+| Problem | Fix |
+|---|---|
+| "Windows protected your PC" when running the Obsidian installer | Click **More info → Run anyway**. Standard for small independent installers. |
+| ZIP extraction fails, hangs, or reports path-length errors | Use 7-Zip and extract to a short path like `C:\Vault`. |
+| Obsidian opens and shows nothing | You selected an empty folder or a folder above the vault root. Re-open and choose the folder that directly contains `README.md`. |
+| Graph view is sluggish at first | It is indexing ~3,800 files and 1.4 GB of PDFs. Give it a minute; it settles. |
+| A link does not resolve | Note names must match exactly. Report mismatches as an issue on the repository. |
+| Download ZIP fails | Use GitHub Desktop (Step 1) or retry at a quieter time of day. |
 
 ## Start here: the 19 topic hubs
 
@@ -139,4 +222,3 @@ and the quality gates (provenance, verbatim markers, link resolution) are descri
 
 The vault is a living instrument. Add to it the way it was built: source first, verbatim,
 never invented, linked by meaning — toward one contract for four crafts.
-
